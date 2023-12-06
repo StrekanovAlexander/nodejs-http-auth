@@ -25,6 +25,10 @@ http.createServer(function(req, res) {
                 attemptLogin(req, res)
             }
             break
+            case '/logout':
+                res.setHeader('Set-Cookie', [ 'uid=;max-age=0', 'email=;max-age=0' ])
+                staticFile(res, '/html/login.html', '.html')
+                break    
         default: 
             const ext = path.extname(url)
             if (ext) {

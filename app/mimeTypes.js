@@ -1,4 +1,5 @@
 module.exports = {
     '.css': 'text/css',
-    '.html': 'text/html' 
+    '.html': 'text/html',
+    '.js': 'text/javascript' 
 }
