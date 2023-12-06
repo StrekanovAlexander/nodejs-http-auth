@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Http Auth</h3>
+        <nav>
+            <a class="button" href="/">Home</a>
+            <a class="button" href="/admin">Admin</a>
+            <a class="button button-primary" href="/login">Login</a>
+        </nav>
+        <h1>Login page</h1>
+        <form action="/login" method="POST">
+            <div class="row">
+                <label for="email">Email</label>
+                <input class="u-full-width" type="email" id="email" name="email" value="johndoe@email.com">
+            </div>
+            <div class="row">
+                <label for="password">Password</label>
+                <input class="u-full-width" type="password" id="password" name="password" value="12345">
+            </div>
+            <input class="button-primary" type="submit" value="Submit">
+          </form>
+    </div>
+</body>
+</html>
